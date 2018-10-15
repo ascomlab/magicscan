@@ -15,6 +15,7 @@ for i in range(len(dirs1)):
 
     for j in range(len(files)):
         file_path = dir_data+files[j]
+
         if file_path.lower().endswith(('.png', '.jpg', '.jpeg', 'tif', 'tiff')):
             frame = cv2.imread(file_path, cv2.IMREAD_COLOR)
             img_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
