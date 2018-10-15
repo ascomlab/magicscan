@@ -1152,7 +1152,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_graph',
       type=str,
-      default='D:/TOMTOM/MAGICscan/model_magicV1/output_graph.pb',
+      default='D:/GitHub/magicscan/output_graph.pb',
       help='Where to save the trained graph.'
   )
   parser.add_argument(
@@ -1173,7 +1173,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_labels',
       type=str,
-      default='D:/TOMTOM/MAGICscan/model_magicV1/output_labels.txt',
+      default='D:/GitHub/magicscan/output_labels.txt',
       help='Where to save the trained graph\'s labels.'
   )
   parser.add_argument(
