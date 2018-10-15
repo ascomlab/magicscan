@@ -1,6 +1,6 @@
 # magicscan
 Introduction and Explaination
-There are three steps for generating model(output_labels.txt,output_graph.pb):
+There are three steps for generating model(output_labels.txt,output_graph.pb) and labeling testing image (test.jpg):
 
 1.c1_video2frame.py: to write a image and extract a frame from video to .jpg and keep them in folder which named as product_code.
 
