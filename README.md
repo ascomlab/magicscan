@@ -1,1 +1,2 @@
 # magicscan
+Introduction and Explaination
