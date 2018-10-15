@@ -14,7 +14,7 @@ for i in range(len(dirs1)):
         os.makedirs(keep_temp_path)
 
     for j in range(len(files)):
-        file_path = dir_data+files[j]
+        file_path = dir_data+dirs1[i]+'/'+files[j]
 
         if file_path.lower().endswith(('.png', '.jpg', '.jpeg', 'tif', 'tiff')):
             frame = cv2.imread(file_path, cv2.IMREAD_COLOR)
@@ -26,15 +26,14 @@ for i in range(len(dirs1)):
 
             cap = cv2.VideoCapture(file_path)
             video_length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-            print("Number of frames: ", video_length)
+            #print("Number of frames: ", video_length)
             count = 0
-            print("Converting video..\n")
+            #print("Converting video..\n")
 
             while cap.isOpened():
-
                 ret, frame = cap.read()
                 img_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                resize = cv2.resize(img_gray, (dimImg, dimImg))
+                resizeimg = cv2.resize(img_gray, (dimImg, dimImg))
                 cv2.imwrite(keep_temp_path + dirs1[i]+'_'+str(j)+'_%d.png' %count , resizeimg)
                 count = count + 1
                 if (count > (video_length-1)):
