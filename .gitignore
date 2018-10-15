@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+c2_runModel.py
+retrain_test.py
+label_image.py

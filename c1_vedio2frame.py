@@ -20,7 +20,7 @@ for i in range(len(dirs1)):
             frame = cv2.imread(file_path, cv2.IMREAD_COLOR)
             img_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             resizeimg = cv2.resize(img_gray, (dimImg, dimImg))
-            cv2.imwrite(keep_temp_path + dirs1[i]+'_'+str(j)+'.png' , resizeimg)
+            cv2.imwrite(keep_temp_path + dirs1[i]+'_'+str(j)+'.jpg' , resizeimg)
 
         elif file_path.lower().endswith(('.mp4')):
 
@@ -34,7 +34,7 @@ for i in range(len(dirs1)):
                 ret, frame = cap.read()
                 img_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
                 resizeimg = cv2.resize(img_gray, (dimImg, dimImg))
-                cv2.imwrite(keep_temp_path + dirs1[i]+'_'+str(j)+'_%d.png' %count , resizeimg)
+                cv2.imwrite(keep_temp_path + dirs1[i]+'_'+str(j)+'_%d.jpg' %count , resizeimg)
                 count = count + 1
                 if (count > (video_length-1)):
                     cap.release()
