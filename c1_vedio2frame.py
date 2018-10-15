@@ -1,8 +1,8 @@
 import os
 import cv2
 
-dir_data = 'D:/GitHub/magicscan/data/'
-dir_datatemp = 'D:/GitHub/magicscan/datatemp/'
+dir_data = 'D:/TOMTOM/MAGICscan/data/'
+dir_datatemp = 'D:/TOMTOM/MAGICscan/datatemp/'
 dimImg = 50
 path1, dirs1, files1 = next(os.walk(dir_data)) #Get folders
 
