@@ -1,0 +1,1 @@
+temp "folder" to keep image(.jpg) before running model

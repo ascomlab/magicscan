@@ -1,1 +1,1 @@
-main database
+main "database" keep label,video/img,keyword
